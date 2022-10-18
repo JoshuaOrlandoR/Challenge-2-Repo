@@ -1,0 +1,16 @@
+:root {
+    --triadic1:#B5B3FE; 
+    --triadic2:#FEB5B3;
+    --triadic3:#B3FEB5;
+
+}
+
+/*Styling for header section*/
+header {
+    display: flex;
+    padding: 25px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--triadic1);
+
+}
