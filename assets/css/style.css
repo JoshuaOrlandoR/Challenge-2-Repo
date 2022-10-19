@@ -6,21 +6,21 @@
 
 }
 
-/*Styling for header section*/
 
+/*Styling for header section*/
 header {
     display: flex;
     padding: 25px 20px;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--background);
-    z-index: 100; /*There will be a background graphic I have created that I intend to use for various parts of the webpage*/
+ /*There will be a background graphic I have created that I intend to use for various parts of the webpage*/
 }
 
 h1 {
     font-family: var(--itext);
     color: var(--brighttext);
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     padding: 15px;
     border: 5px solid var(--contrast);
@@ -39,7 +39,7 @@ header nav ul {
 
 header li {
     font-family: var(--itext);
-    font-size: 22px;
+    font-size: 28px;
     
 }
 
@@ -52,5 +52,78 @@ header a {
 
 header li a:hover {
     color: var(--brighttext);
-    text-decoration: underline;
+}
+
+
+/* Hero Styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: var(--itext); /* CHANGE THIS FONT IT DOESNT SUIT THE PAGE */
+    font-size: 25px;
+    background-color: var(--background);
+}
+
+.josh-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://i.natgeofe.com/n/8271db90-5c35-46bc-9429-588a9529e44a/raccoon_thumb_3x4.JPG");
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+   /* background-repeat: no-repeat; -delete if not needed in final version of site*/ 
+}
+
+.hero-caption {
+display: block;
+text-align: center;
+position: absolute;
+position: absolute;
+top: 80%; /* maybe make centered, bottom allignment doesnt suit the image currently*/
+left: 50%;
+transform: translate(-50%, -50%);
+color: var(--contrast);
+}
+
+.hero-caption button {
+border: 1px solid var(--background);
+display: inline-block;
+color: var(--background);
+background-color: var(--contrast);
+text-align: center;
+cursor: pointer;
+padding: 8px 8px;
+border-radius: 8px 10px 8px 10px;
+}
+
+.hero-caption button:hover {
+background-color: var(--background);
+color: var(--contrast);
+}
+
+
+/*My Story/About Me Styling*/
+.my-story {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    width: 85%;
+    left: 15px;
+    position: absolute;  /* all containers must have these dimensions to be lined up according to my specifications*/
+    background-color: var(--background);
+}
+
+.categorylabel {
+    font-size: larger;
+    color: var(--brighttext);
+    padding: 10px;
+    position: relative;
+    left: 22px;
+}
+
+.mystorycontent {
+    padding: 20px;
+    position: relative;
+    left: 50px;
+    font-size: 20px;
+    color: var(--contrast);
 }
