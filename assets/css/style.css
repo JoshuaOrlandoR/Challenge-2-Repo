@@ -1,129 +1,110 @@
-:root {
+/*Root styling for repeated colors*/
+:root { 
     --background:#252525; 
     --contrast:#c1d1dd;
     --brighttext:#e6193f;
-    --itext: monospace;
-
-}
-
-
-/*Styling for header section*/
-header {
-    display: flex;
-    padding: 25px 20px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: var(--background);
- /*There will be a background graphic I have created that I intend to use for various parts of the webpage*/
-}
-
-h1 {
-    font-family: var(--itext);
-    color: var(--brighttext);
-    font-size: 40px;
-    font-weight: bold;
-    padding: 15px;
-    border: 5px solid var(--contrast);
-
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 10px;
-    padding: 20px;
+    }
     
-}
-
-header li {
-    font-family: var(--itext);
-    font-size: 28px;
+    * {
+        padding: 0;
+        margin: 0;
+        font-family:Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
     
-}
-
-header a {
-    color: var(--contrast);
-    text-decoration: none;
-    font-weight: bold;
-    margin: 15px 55px;
-}
-
-header li a:hover {
-    color: var(--brighttext);
-}
-
-
-/* Hero Styling */
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: var(--itext); /* CHANGE THIS FONT IT DOESNT SUIT THE PAGE */
-    font-size: 25px;
-    background-color: var(--background);
-}
-
-.josh-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://i.natgeofe.com/n/8271db90-5c35-46bc-9429-588a9529e44a/raccoon_thumb_3x4.JPG");
-    height: 60%;
-    background-position: center;
-    background-size: cover;
-    position: relative; 
-   /* background-repeat: no-repeat; -delete if not needed in final version of site*/ 
-}
-
-.hero-caption {
-display: block;
-text-align: center;
-position: absolute;
-position: absolute;
-top: 80%; /* maybe make centered, bottom allignment doesnt suit the image currently*/
-left: 50%;
-transform: translate(-50%, -50%);
-color: var(--contrast);
-}
-
-.hero-caption button {
-border: 1px solid var(--background);
-display: inline-block;
-color: var(--background);
-background-color: var(--contrast);
-text-align: center;
-cursor: pointer;
-padding: 8px 8px;
-border-radius: 8px 10px 8px 10px;
-}
-
-.hero-caption button:hover {
-background-color: var(--background);
-color: var(--contrast);
-}
-
-
-/*My Story/About Me Styling*/
-.my-story {
-    display: flex;
-    justify-content: flex-start;
-    padding: 15px;
-    width: 85%;
-    left: 15px;
-    position: absolute;  /* all containers must have these dimensions to be lined up according to my specifications*/
-    background-color: var(--background);
-}
-
-.categorylabel {
-    font-size: larger;
-    color: var(--brighttext);
-    padding: 10px;
-    position: relative;
-    left: 22px;
-}
-
-.mystorycontent {
-    padding: 20px;
-    position: relative;
-    left: 50px;
-    font-size: 20px;
-    color: var(--contrast);
-}
+    /*Styling for header and hero - now consolodated and fixed issues*/
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 20px;
+    }
+    
+    h1 {
+        color: var(--brighttext);
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px  25px;
+    }
+    nav ul li a{
+        color: var(--contrast);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: large;
+    }
+    
+    nav ul li a:hover {
+        color: var(--brighttext);
+    }
+    
+    .joshhero{
+        height: 75vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-image:linear-gradient(black, rgb(77, 77, 77), rgb(70, 70, 70),rgb(77, 77, 77),black);  /*I intend to make/ask a friend for a simple graphic for the background to replace the gradiant, this is placeholder*/
+    }
+    
+    .herocontent {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left:8%; /* change these values to suit the background image*/
+    }
+    
+    h2 {
+        color: var(--contrast);
+    }
+    
+    span {
+        color: var(--brighttext);
+    }
+    
+    .herocontent button {
+        border: 1px solid var(--background);
+        display: inline-block;
+        color: var(--background);
+        background-color: var(--contrast);
+        text-align: center;
+        cursor: pointer;
+        padding: 8px 8px;
+        border-radius: 8px 10px 8px 10px;
+        }
+    
+    
+    .herocontent button:hover {
+        background-color: var(--background);
+        color: var(--brighttext);
+        }
+    
+    /* About Me/ My Story styling*/
+    .my-story {
+        width: 100%;
+        padding: 60px;
+        background-image: linear-gradient(black, rgb(77, 77, 77), rgb(70, 70, 70),rgb(77, 77, 77),black);
+    }
+    
+    .categorylabel {
+        display: flex;
+        width: 70%;
+        padding: 30px;
+    }
+     .categorylabel h2 {
+        color: var(--brighttext);
+        font-size: 25px ;
+     }
+    
+     .mystorycontent {
+        display: inline-block;
+        color: var(--contrast);
+        left: 15px;
+        position: relative;
+        left: 50px;
+        flex-wrap: wrap;
+        width: 85%;
+        font-size: 20px;
+     }
