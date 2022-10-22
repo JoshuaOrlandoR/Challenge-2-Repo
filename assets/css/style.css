@@ -16,7 +16,8 @@
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 25px 20px;
+        padding: 30px 25px;
+        background-color: #1f1e1e;
     }
     
     h1 {
@@ -24,6 +25,7 @@
         font-size: 40px;
         font-weight: bold;
     }
+
     
     nav ul li{
         list-style-type: none;
@@ -41,23 +43,29 @@
         color: var(--brighttext);
     }
     
-    .joshhero{
-        height: 75vh;
+    .joshhero {
+        height: 70vh;
         width: 100%;
-        background-size: cover;
         background-position: center;
-        background-image:linear-gradient(black, rgb(77, 77, 77), rgb(70, 70, 70),rgb(77, 77, 77),black);  /*I intend to make/ask a friend for a simple graphic for the background to replace the gradiant, this is placeholder*/
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 100% 100%; /*have to do this to center my image properly*/
+        background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)), /* this gradiant is used to darken my image*/
+        url(https://lh3.googleusercontent.com/KkxhggkrtFRABDIMBdXPlmiaB5ClwuFePb9rZ8dyv76HcVJPtdC9nxv8KTUKlPIKG9boPIXgW95rz__SQJ6A6LPoD7w_K1Qde2wvaXAJB3kA_hCSQZKuU5mbW-MP6lEMSLWJ8-p4D-LeTMk524zuG5S6Yg2us1BwinahlvzbipMIGiusSTHG_buH35thO-9zQQ-XCJNoBF3sZ48AHr6q4oABnd6oFY5TvfQ9nE3ztpRfcJTcA1VR2J-oDk8C_m9FBpky3EdkMJINNodGDACxNfYU7x-W3M5e7DhkLZTHx_3qqharquwhfZuc8d2X5NO5P5LgtimfXEd9V6xGLVV_5rDVwSYADh9J27wRUIJqEB1YTjL3AWJL6zWyLrV1TSpT6AV9Gf_1AnFFUZWn8k2A8OSdAJykSfSNOJJJ3s3MhMArU0Pv1OiHDXA2GdUuphgnP4bQaIJS7rDtqnC4xSsmNrcMpbnb2rFrXAMLl4N19yZWBAWvP9mjEZEOasbPihlN_8jZFBbuS0bkKt6uL3ROIETk2bUklfo-Cgsa49hNZkf6z6lyN0CGCpqexQd_R4X-Iyk0P1PmzyUKf4UAoJNgnzEbMhYH1iTvKG3h2CCK3DcLwQe2oXFiySDIxYDfo96Og27EZZxfvJ2MLm3WeCyPWBThqLvf1Vo1xgC_xefAas8mO1UyVegDVzwQE-8HI-XD-Yz8fiOVpQjybp9hnilElPotxCMixpdg8fOM7Nzk6YMHy6smmsnq5koH0KlPjEP35Vz9VfbFFQjIJZE7Bhld-F9eO9DGHRk0wmz63aZp-AJCrXQBFTdpmJvxcCXpprNg5RIlkiDSXB4Qry-B7UA6RMXFohiBbb7TzdbTFwhOcVBme6Yjd_gtls_z2s3yt1Ogb35v4tU4Q59CWWcVMpiDkqeJaZNXGTGjriW_AVUKSouo-898=w1665-h937-no?authuser=0);
+        /*The image is edited very poorly, but this was just a quick edit in order to get my face on the hero section with a custom gradiant */
+        /*background-image (placeholder):linear-gradient(black, rgb(77, 77, 77), rgb(70, 70, 70),rgb(77, 77, 77),black);   /*I intend to make/ask a friend for a simple graphic for the background to replace the gradiant, this is placeholder*/
     }
-    
+
     .herocontent {
         display: block;
         position: absolute;
-        top: 50%;
+        top: 60%;
         left:8%; /* change these values to suit the background image*/
     }
     
-    h2 {
+    .herocontent h2 {
         color: var(--contrast);
+        font-size: 22px;
     }
     
     span {
@@ -73,6 +81,7 @@
         cursor: pointer;
         padding: 8px 8px;
         border-radius: 8px 10px 8px 10px;
+        box-shadow: 3px 6px 5px black;
         }
     
     
@@ -82,10 +91,12 @@
         }
     
     /* About Me/ My Story styling*/
-    .my-story {
+    .sitebody {
         width: 100%;
-        padding: 60px;
-        background-image: linear-gradient(black, rgb(77, 77, 77), rgb(70, 70, 70),rgb(77, 77, 77),black);
+        padding: 55px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://lh3.googleusercontent.com/s_UaZnyrrWf2GNKV0RJBPEs0-7E4oHfFYZA0otGvmM0izxSA8N5ghNGnsK6O-OExHcSiiJX9wMD_zK-yXZ2P1UjQiEVjHdZQpvxPrESgxdASm8VITVlPGp-MreW0OtRo4OI628ky8rwILqx4AC1WhK35eAI6zFWu1PRTMYcYV9DOIpXXGPTSsBphwvvuSACmtdClOrpE6pLnc_E5-x1adsuGXgjG6lLJhNHUP1c7tf6WnywPkNCSNCC5tXa_cCC9VsifsrSanlVQWrpTlbd5LMZZMsXcpeAGie33y-tpIdP3savD5TaPx23i3vNxPu4YQ05rck2pqSDrzGO-qAab3XfVa0CSWooS0dAHR2V2fYTqMzlFgdpXHcsvIvsGXAfr7sWBVhnp-EfYvnNk0eJN5moHyBJM4W0M0B4XC1Z3JJoN4Dwf-iHw4rJbSTbH-b6dclNyy6y2UGAXvbRlAU6RfDiFjEBamWI0xsM1-fFfllOLC5D-gezoqG-OCcODnQIybnUSQOBvSVum1KPV9DIVXqv98_jvbN8j5q8E5_gcQHKodO8-2mlEyZkLKlsyGrXYHsQDM_H1ilNGQK5ay_hOgoymAWgtM_APIMyj64F4Rm62JOkhcACAP_Jy7eylRX7Zpu8CbQWiyObgLYPhjcw4LFiUIGoBN5EOgoU8wT92J0m1pUgmOL5wquK3yUZTLWonJOx5e_Jbj-I8Ehhn18Fs9GjC7jMGtmg3Bw9-jmrdTUl0jsy65L0rmvfn2RRryuk-VAYzyXpJImwwOKLgC8kEpGWtBpk4nLVLcpj6zYWWDPDt4NUXlOVXzMioul4iUVbNPo90YJHF5KXKa4BLeQQxu5GtlQFXG5S9DF5X1YxpR_MUbcqoAHCoifQdw5O410SXv3rqfElqPAv06Dt-LGgNZhOhT2QhzSaLAaUSuCTKMKF0iDeK=w1560-h878-no?authuser=0);
+        background-size: 100%;
+        /* background-image: linear-gradient(black, rgb(77, 77, 77), rgb(70, 70, 70),rgb(77, 77, 77),black); */
     }
     
     .categorylabel {
@@ -95,7 +106,7 @@
     }
      .categorylabel h2 {
         color: var(--brighttext);
-        font-size: 25px ;
+        font-size: 28px ;
      }
     
      .mystorycontent {
@@ -105,6 +116,46 @@
         position: relative;
         left: 50px;
         flex-wrap: wrap;
+        height: 200px;
         width: 85%;
         font-size: 20px;
      }
+
+     /*Projects Styling*/
+     .projectspace {
+        width:80%;
+        display:flex;
+        height: 600px;
+        /* justify-content: center; */
+
+     }
+
+     .projectgrid { /*first attempt at making a grid*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2% 3%
+        }
+        
+        .project1 { 
+            grid-area: 1 / 1 / 2 / 4; 
+
+        }
+        .project2 { 
+            grid-area: 2 / 1 / 3 / 2; 
+        }
+        .project3 { 
+            grid-area: 2 / 2 / 3 / 3; 
+        }
+        .project4 { 
+            grid-area: 2 / 3 / 3 / 4;
+         }
+        .project5 {
+             grid-area: 3 / 1 / 4 / 2; 
+            }
+        .project6 { 
+            grid-area: 3 / 2 / 4 / 3; 
+        }
+        .project7 { 
+            grid-area: 3 / 3 / 4 / 4; 
+        }
