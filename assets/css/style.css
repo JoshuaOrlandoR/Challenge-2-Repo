@@ -5,157 +5,345 @@
     --brighttext:#e6193f;
     }
     
-    * {
-        padding: 0;
-        margin: 0;
-        font-family:Arial, Helvetica, sans-serif;
-        box-sizing: border-box;
-    }
+* {
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
     
     /*Styling for header and hero - now consolodated and fixed issues*/
-    nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 30px 25px;
-        background-color: #1f1e1e;
-    }
-    
-    h1 {
-        color: var(--brighttext);
-        font-size: 40px;
-        font-weight: bold;
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 25px;
+    background-color: #1f1e1e;
+}
+
+h1 {
+    color: var(--brighttext);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px  25px;
+}
+nav ul li a{
+    color: var(--contrast);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: var(--brighttext);
+}
+
+.joshhero {
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% 100%; /*have to do this to center my image properly*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)), /* this gradiant is used to darken my image*/
+    url(https://lh3.googleusercontent.com/KkxhggkrtFRABDIMBdXPlmiaB5ClwuFePb9rZ8dyv76HcVJPtdC9nxv8KTUKlPIKG9boPIXgW95rz__SQJ6A6LPoD7w_K1Qde2wvaXAJB3kA_hCSQZKuU5mbW-MP6lEMSLWJ8-p4D-LeTMk524zuG5S6Yg2us1BwinahlvzbipMIGiusSTHG_buH35thO-9zQQ-XCJNoBF3sZ48AHr6q4oABnd6oFY5TvfQ9nE3ztpRfcJTcA1VR2J-oDk8C_m9FBpky3EdkMJINNodGDACxNfYU7x-W3M5e7DhkLZTHx_3qqharquwhfZuc8d2X5NO5P5LgtimfXEd9V6xGLVV_5rDVwSYADh9J27wRUIJqEB1YTjL3AWJL6zWyLrV1TSpT6AV9Gf_1AnFFUZWn8k2A8OSdAJykSfSNOJJJ3s3MhMArU0Pv1OiHDXA2GdUuphgnP4bQaIJS7rDtqnC4xSsmNrcMpbnb2rFrXAMLl4N19yZWBAWvP9mjEZEOasbPihlN_8jZFBbuS0bkKt6uL3ROIETk2bUklfo-Cgsa49hNZkf6z6lyN0CGCpqexQd_R4X-Iyk0P1PmzyUKf4UAoJNgnzEbMhYH1iTvKG3h2CCK3DcLwQe2oXFiySDIxYDfo96Og27EZZxfvJ2MLm3WeCyPWBThqLvf1Vo1xgC_xefAas8mO1UyVegDVzwQE-8HI-XD-Yz8fiOVpQjybp9hnilElPotxCMixpdg8fOM7Nzk6YMHy6smmsnq5koH0KlPjEP35Vz9VfbFFQjIJZE7Bhld-F9eO9DGHRk0wmz63aZp-AJCrXQBFTdpmJvxcCXpprNg5RIlkiDSXB4Qry-B7UA6RMXFohiBbb7TzdbTFwhOcVBme6Yjd_gtls_z2s3yt1Ogb35v4tU4Q59CWWcVMpiDkqeJaZNXGTGjriW_AVUKSouo-898=w1665-h937-no?authuser=0);
+    /*The image is edited very poorly, but this was just a quick edit in order to get my face on the hero section with a custom gradiant */
+    /*background-image (placeholder):linear-gradient(black, rgb(77, 77, 77), rgb(70, 70, 70),rgb(77, 77, 77),black);   /*I intend to make/ask a friend for a simple graphic for the background to replace the gradiant, this is placeholder*/
+}
+
+.herocontent {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left:8%; 
+}
+
+.herocontent h2 {
+    color: var(--contrast);
+    font-size: 22px;
+}
+
+span {
+    color: var(--brighttext);
+}
+
+.herocontent button {
+    border: 1px solid var(--background);
+    display: inline-block;
+    color: var(--background);
+    background-color: var(--contrast);
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 8px;
+    border-radius: 8px 10px 8px 10px;
+    box-shadow: 3px 6px 5px black;
     }
 
-    
-    nav ul li{
-        list-style-type: none;
-        display: inline-block;
-        padding: 10px  25px;
+
+.herocontent button:hover {
+    background-color: var(--background);
+    color: var(--brighttext);
     }
-    nav ul li a{
-        color: var(--contrast);
+
+/* About Me/ My Story styling*/
+.sitebody {
+    width: 100%;
+    padding: 55px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://lh3.googleusercontent.com/s_UaZnyrrWf2GNKV0RJBPEs0-7E4oHfFYZA0otGvmM0izxSA8N5ghNGnsK6O-OExHcSiiJX9wMD_zK-yXZ2P1UjQiEVjHdZQpvxPrESgxdASm8VITVlPGp-MreW0OtRo4OI628ky8rwILqx4AC1WhK35eAI6zFWu1PRTMYcYV9DOIpXXGPTSsBphwvvuSACmtdClOrpE6pLnc_E5-x1adsuGXgjG6lLJhNHUP1c7tf6WnywPkNCSNCC5tXa_cCC9VsifsrSanlVQWrpTlbd5LMZZMsXcpeAGie33y-tpIdP3savD5TaPx23i3vNxPu4YQ05rck2pqSDrzGO-qAab3XfVa0CSWooS0dAHR2V2fYTqMzlFgdpXHcsvIvsGXAfr7sWBVhnp-EfYvnNk0eJN5moHyBJM4W0M0B4XC1Z3JJoN4Dwf-iHw4rJbSTbH-b6dclNyy6y2UGAXvbRlAU6RfDiFjEBamWI0xsM1-fFfllOLC5D-gezoqG-OCcODnQIybnUSQOBvSVum1KPV9DIVXqv98_jvbN8j5q8E5_gcQHKodO8-2mlEyZkLKlsyGrXYHsQDM_H1ilNGQK5ay_hOgoymAWgtM_APIMyj64F4Rm62JOkhcACAP_Jy7eylRX7Zpu8CbQWiyObgLYPhjcw4LFiUIGoBN5EOgoU8wT92J0m1pUgmOL5wquK3yUZTLWonJOx5e_Jbj-I8Ehhn18Fs9GjC7jMGtmg3Bw9-jmrdTUl0jsy65L0rmvfn2RRryuk-VAYzyXpJImwwOKLgC8kEpGWtBpk4nLVLcpj6zYWWDPDt4NUXlOVXzMioul4iUVbNPo90YJHF5KXKa4BLeQQxu5GtlQFXG5S9DF5X1YxpR_MUbcqoAHCoifQdw5O410SXv3rqfElqPAv06Dt-LGgNZhOhT2QhzSaLAaUSuCTKMKF0iDeK=w1560-h878-no?authuser=0);
+    background-size: 100%;
+}
+
+.categorylabel {
+    display: flex;
+    width: 70%;
+    padding: 30px;
+}
+.categorylabel h2 {
+color: var(--brighttext);
+font-size: 28px ;
+}
+
+.mystorycontent {
+display: inline-block;
+color: var(--contrast);
+left: 12px;
+position: relative;
+left: 50px;
+flex-wrap: wrap;
+height: 200px;
+width: 85%;
+font-size: 20px;
+}
+
+/*Projects Styling*/
+.projectspace {
+width:80%;
+display:flex;
+height: 600px;
+justify-content: space-around;
+left: 2150px;
+
+}
+
+.projectgrid { /*first attempt at making a grid*/
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-gap: 2% 3%;
+width: 100%;
+
+}
+
+.project1 {  /*all the backgrounds are just placeholder until I have projects to add */
+    grid-area: 1 / 1 / 2 / 4; 
+    background-image: linear-gradient(yellow, orange, red, pink);
+    text-decoration: none;
+}
+
+.project2 { 
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: linear-gradient(blue,lightblue,violet, purple);
+    text-decoration: none; 
+    
+}
+
+.project3 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-image: linear-gradient(darkgreen,green,olive,yellow);
+    text-decoration: none;
+}
+
+.project4 { 
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: linear-gradient(white,gray,rgb(41, 40, 40), black);
+    text-decoration: none;
+    }
+
+.project5 {
+        grid-area: 3 / 1 / 4 / 2; 
+        background-image: linear-gradient(yellow, orange, red, pink);
         text-decoration: none;
-        font-weight: bold;
-        font-size: large;
-    }
-    
-    nav ul li a:hover {
-        color: var(--brighttext);
-    }
-    
-    .joshhero {
-        height: 70vh;
-        width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 100% 100%; /*have to do this to center my image properly*/
-        background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)), /* this gradiant is used to darken my image*/
-        url(https://lh3.googleusercontent.com/KkxhggkrtFRABDIMBdXPlmiaB5ClwuFePb9rZ8dyv76HcVJPtdC9nxv8KTUKlPIKG9boPIXgW95rz__SQJ6A6LPoD7w_K1Qde2wvaXAJB3kA_hCSQZKuU5mbW-MP6lEMSLWJ8-p4D-LeTMk524zuG5S6Yg2us1BwinahlvzbipMIGiusSTHG_buH35thO-9zQQ-XCJNoBF3sZ48AHr6q4oABnd6oFY5TvfQ9nE3ztpRfcJTcA1VR2J-oDk8C_m9FBpky3EdkMJINNodGDACxNfYU7x-W3M5e7DhkLZTHx_3qqharquwhfZuc8d2X5NO5P5LgtimfXEd9V6xGLVV_5rDVwSYADh9J27wRUIJqEB1YTjL3AWJL6zWyLrV1TSpT6AV9Gf_1AnFFUZWn8k2A8OSdAJykSfSNOJJJ3s3MhMArU0Pv1OiHDXA2GdUuphgnP4bQaIJS7rDtqnC4xSsmNrcMpbnb2rFrXAMLl4N19yZWBAWvP9mjEZEOasbPihlN_8jZFBbuS0bkKt6uL3ROIETk2bUklfo-Cgsa49hNZkf6z6lyN0CGCpqexQd_R4X-Iyk0P1PmzyUKf4UAoJNgnzEbMhYH1iTvKG3h2CCK3DcLwQe2oXFiySDIxYDfo96Og27EZZxfvJ2MLm3WeCyPWBThqLvf1Vo1xgC_xefAas8mO1UyVegDVzwQE-8HI-XD-Yz8fiOVpQjybp9hnilElPotxCMixpdg8fOM7Nzk6YMHy6smmsnq5koH0KlPjEP35Vz9VfbFFQjIJZE7Bhld-F9eO9DGHRk0wmz63aZp-AJCrXQBFTdpmJvxcCXpprNg5RIlkiDSXB4Qry-B7UA6RMXFohiBbb7TzdbTFwhOcVBme6Yjd_gtls_z2s3yt1Ogb35v4tU4Q59CWWcVMpiDkqeJaZNXGTGjriW_AVUKSouo-898=w1665-h937-no?authuser=0);
-        /*The image is edited very poorly, but this was just a quick edit in order to get my face on the hero section with a custom gradiant */
-        /*background-image (placeholder):linear-gradient(black, rgb(77, 77, 77), rgb(70, 70, 70),rgb(77, 77, 77),black);   /*I intend to make/ask a friend for a simple graphic for the background to replace the gradiant, this is placeholder*/
     }
 
+.project6 { 
+    grid-area: 3 / 2 / 4 / 3; 
+    background-image: linear-gradient(blue,lightblue,violet, purple);
+    text-decoration: none;
+}
+
+.project7 { 
+    grid-area: 3 / 3 / 4 / 4; 
+    background-image: linear-gradient(darkgreen,green,olive,yellow);
+    text-decoration: none;
+}
+.itemcontainer {
+    color: black;
+    border:solid;
+}
+
+.itemcontainer:hover {
+    color: var(--contrast);
+    border:groove;
+}
+
+.projectname {
+    background-color: var(--background);
+    color: var(--contrast);
+}
+
+.projecttext {
+    color: black;
+}
+
+/*Get in Touch styling*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 25px;
+    background-color: #1f1e1e;
+    width: 90%;
+}
+
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px  25px;
+    justify-content: space-around;
+}
+footer ul li a{
+    color: var(--contrast);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+footer ul li a:hover {
+    color: var(--brighttext);
+}
+
+/*Media Queries*/
+@media screen and (max-width: 820px) { /*Size of Ipad air*/
+    h1 {
+        font-size: 30px
+    }
+    nav ul li a {
+        font-size: 22px;
+    }
+    .joshhero {
+        height: 50vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)), 
+        url(https://lh3.googleusercontent.com/i-40eD2iQQk4eHwv4uoAtPyEmMrBeJe51cRdfOVNCke4LZzHrr3B841Uc0xFzPWF6cwR77mxcm2-K4VOMYr0dNqV5Az0ksWHrwefyReDMEBwBSWt5mE0rW7CjleV0pPCkYNti6VZckDDav0d2SaQYgtmQbr7Seb_Ab63FbecXkK03v_pl8BmcQrjFpeESpOX--0dH8_R8QfAMznLu8SQyLxRQ5-H0yiH7zc7YKXfr1PT4aApvYz7zYK1deoxHWWnCD-fJlXisjEi2yT0VyqnraIxGya8-FucL-ONUvaKT2vIvTjkOgEwbGdxcb5c4FexOcUgqmuKJYcz5sTE2G9qBPivOfdeEta5ovRe_eeoJxcVQYIP8K-kaF1Eh4EetjslN8Ftpuc4-z12O7qDoyEGioKxCRnHTR_kMsDCjugqdyGGTWTfZccLeI58BzjjdNgtLyzdKVaPLjagKYGW9IgcQgz9TYacvl_vSE2URW2jIfeVO9nXcj_3f7cZIQ5tw0uVTtMcnDhxdFDnMJN0dGLZ788q5a1GQ9Obp7Ngs0SNii1x0cu6XyD2apMs24TPk6i2MGUj2v4LtVyggCwdme5cxo0STnY8nqRDGpTg-EXQe1dTNoRAXt44n6QzHjhb_KAFDKtpOzbL0ezu2J_5hB__8bv0c6H4WnMI_RlU6nis4QRlvnCQWvhCsEETdjet19er3xWMRSZtp8jjW__iqz7iFuZUWWR_JeLedEBahhEJtk2NKxyOKhIupbxp0pvmScG5e3upAkenm6kCWzY5NgRkI-7iymWcuyKZpjnnPDumBm5Rbs-sZTKggzoMv79U_XuL49uJvlZm0yDH-7axwu7OzN7DPArFvs5u8vE6L-0GKFmzlfhiaVJoWGrfZAVHSGccOPv_OofQhiiGuSsaPf9NDVwzRIFbPf_tUtAB_K1tPftxBYxk=w913-h514-no?authuser=0)
+    }
     .herocontent {
         display: block;
         position: absolute;
-        top: 60%;
-        left:8%; /* change these values to suit the background image*/
+        top: 40%;
+        left:8%;
+    }
+
+    .herocontent h2 {
+        font-size: 22px;
+    }
+
+    .sitebody {
+        padding: 35px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://lh3.googleusercontent.com/s_UaZnyrrWf2GNKV0RJBPEs0-7E4oHfFYZA0otGvmM0izxSA8N5ghNGnsK6O-OExHcSiiJX9wMD_zK-yXZ2P1UjQiEVjHdZQpvxPrESgxdASm8VITVlPGp-MreW0OtRo4OI628ky8rwILqx4AC1WhK35eAI6zFWu1PRTMYcYV9DOIpXXGPTSsBphwvvuSACmtdClOrpE6pLnc_E5-x1adsuGXgjG6lLJhNHUP1c7tf6WnywPkNCSNCC5tXa_cCC9VsifsrSanlVQWrpTlbd5LMZZMsXcpeAGie33y-tpIdP3savD5TaPx23i3vNxPu4YQ05rck2pqSDrzGO-qAab3XfVa0CSWooS0dAHR2V2fYTqMzlFgdpXHcsvIvsGXAfr7sWBVhnp-EfYvnNk0eJN5moHyBJM4W0M0B4XC1Z3JJoN4Dwf-iHw4rJbSTbH-b6dclNyy6y2UGAXvbRlAU6RfDiFjEBamWI0xsM1-fFfllOLC5D-gezoqG-OCcODnQIybnUSQOBvSVum1KPV9DIVXqv98_jvbN8j5q8E5_gcQHKodO8-2mlEyZkLKlsyGrXYHsQDM_H1ilNGQK5ay_hOgoymAWgtM_APIMyj64F4Rm62JOkhcACAP_Jy7eylRX7Zpu8CbQWiyObgLYPhjcw4LFiUIGoBN5EOgoU8wT92J0m1pUgmOL5wquK3yUZTLWonJOx5e_Jbj-I8Ehhn18Fs9GjC7jMGtmg3Bw9-jmrdTUl0jsy65L0rmvfn2RRryuk-VAYzyXpJImwwOKLgC8kEpGWtBpk4nLVLcpj6zYWWDPDt4NUXlOVXzMioul4iUVbNPo90YJHF5KXKa4BLeQQxu5GtlQFXG5S9DF5X1YxpR_MUbcqoAHCoifQdw5O410SXv3rqfElqPAv06Dt-LGgNZhOhT2QhzSaLAaUSuCTKMKF0iDeK=w1560-h878-no?authuser=0);
+        background-size: 170%;
+    }
+    .categorylabel h2 {
+        font-size: 24px;
+    }
+    .mystorycontent {
+        left: 20px;
+        height: 150px;
+        width: 85%;
+        font-size: 20px;
+    }
+
+    .projectname {
+        font-size: 20px;
+    }
+    .projectspace {
+        width:90%;
+    }
+}
+
+@media screen and (max-width: 390px) { /*iPhone12 Pro size*/
+    h1 {
+        font-size: 22px;
+    }
+    nav {
+        padding: 15px 13px;
+    }
+    nav ul li{
+        padding: 5px  13px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    .joshhero {
+        height: 40vh;
+        width: 110%;
+        background-position: 110% 110%; 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)), 
+        url(https://lh3.googleusercontent.com/YDd1ALBvZVAj7LFLDkVu-yDBt9XMZlSP44jhB-2SRYWyyyss5gwIsdiZcoM7OJMHKvAhWPCKNBihhdA85OJ7EuDu7LlYzjp6bkKgY0CptuzUv-HkJz6Gb6zNZgqipCaojaqNe_KQ38iJdnftSRg9Eak7s1q2lNOUy8iMFtwZrq0UgOLCFRLVGbIg36MJzLE_P4soeYWhPpvLBwr8yu_x6ZxFBj0bLe3Q-ctBAyBqz-i1AhEhKNCRsln-_g2-L5XeCWfxs-yuNqrXWyCGxbwXgqi8xWh_qn5bM5k2XkjoMqxSWbt8EmxTgUSbyjlILCeP2JiwHh_SRoRYxf3sjNFn4s16GqfjN0m2ODw-bJJLmB3U_iQTp-kfjoQ5bHEoJ7wZkiSXHuo372nTEs-dykVoJB9nRY9kot3jyw0Da1KPaVyACU0kUQ4IRhcKWeH7VraZv_08gM1UiR-rQnLX6MDW_O6MxSNCHHKKEJfSWnduqGMGHmSGxmvMSHYlq86cLwZ7jJHoanMF_312NWRrYarXOr0GNQBkmzN96ZszTUOXUBvuYSHYtIhj1OyAX5Gx_0_55hvd4S8Hey1CuxpZXiZa7HcCqC0Rqd8Z0aodBxLiRaOepklTGoZ00z3gSUKEf7nZza1Y1Str1kWKo1z2h-Z55lItBADVDq3JYIDH3bWht9z82yicCcBVosrHidBh1vbHv27iVt0s3o1rnE_QSO9rMjtDRaHzZCSmOmW50pVpoN5dQ5kIamAy4i9xAU6XmHtvih1I_EEaD6zV-iYpVASjZk_5ECY_Fqw4NCX5vLvSAEmkZ8Inb_oddHuIu_xCux4yo-mRbO3zOiyuIOfQ3uuwxy2_kTVRL_CgtbGEWNkuLuHir3fEsjIk45Ez2GQt2uvAcOtZEF5rNUBDhRV9eDWnxpQ7XW5jr7Cgg5oSZb58VZe1ReOC=w407-h251-no?authuser=0);
+    }
+    .herocontent {
+        top: 30%;
+        left:8%; 
     }
     
     .herocontent h2 {
         color: var(--contrast);
-        font-size: 22px;
+        font-size: 12px;
     }
-    
-    span {
-        color: var(--brighttext);
-    }
-    
     .herocontent button {
-        border: 1px solid var(--background);
-        display: inline-block;
-        color: var(--background);
-        background-color: var(--contrast);
-        text-align: center;
-        cursor: pointer;
-        padding: 8px 8px;
-        border-radius: 8px 10px 8px 10px;
-        box-shadow: 3px 6px 5px black;
-        }
-    
-    
-    .herocontent button:hover {
-        background-color: var(--background);
-        color: var(--brighttext);
-        }
-    
-    /* About Me/ My Story styling*/
+        padding: 5px 5px;
+        font-size: 10px;
+    }
     .sitebody {
-        width: 100%;
-        padding: 55px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://lh3.googleusercontent.com/s_UaZnyrrWf2GNKV0RJBPEs0-7E4oHfFYZA0otGvmM0izxSA8N5ghNGnsK6O-OExHcSiiJX9wMD_zK-yXZ2P1UjQiEVjHdZQpvxPrESgxdASm8VITVlPGp-MreW0OtRo4OI628ky8rwILqx4AC1WhK35eAI6zFWu1PRTMYcYV9DOIpXXGPTSsBphwvvuSACmtdClOrpE6pLnc_E5-x1adsuGXgjG6lLJhNHUP1c7tf6WnywPkNCSNCC5tXa_cCC9VsifsrSanlVQWrpTlbd5LMZZMsXcpeAGie33y-tpIdP3savD5TaPx23i3vNxPu4YQ05rck2pqSDrzGO-qAab3XfVa0CSWooS0dAHR2V2fYTqMzlFgdpXHcsvIvsGXAfr7sWBVhnp-EfYvnNk0eJN5moHyBJM4W0M0B4XC1Z3JJoN4Dwf-iHw4rJbSTbH-b6dclNyy6y2UGAXvbRlAU6RfDiFjEBamWI0xsM1-fFfllOLC5D-gezoqG-OCcODnQIybnUSQOBvSVum1KPV9DIVXqv98_jvbN8j5q8E5_gcQHKodO8-2mlEyZkLKlsyGrXYHsQDM_H1ilNGQK5ay_hOgoymAWgtM_APIMyj64F4Rm62JOkhcACAP_Jy7eylRX7Zpu8CbQWiyObgLYPhjcw4LFiUIGoBN5EOgoU8wT92J0m1pUgmOL5wquK3yUZTLWonJOx5e_Jbj-I8Ehhn18Fs9GjC7jMGtmg3Bw9-jmrdTUl0jsy65L0rmvfn2RRryuk-VAYzyXpJImwwOKLgC8kEpGWtBpk4nLVLcpj6zYWWDPDt4NUXlOVXzMioul4iUVbNPo90YJHF5KXKa4BLeQQxu5GtlQFXG5S9DF5X1YxpR_MUbcqoAHCoifQdw5O410SXv3rqfElqPAv06Dt-LGgNZhOhT2QhzSaLAaUSuCTKMKF0iDeK=w1560-h878-no?authuser=0);
-        background-size: 100%;
-        /* background-image: linear-gradient(black, rgb(77, 77, 77), rgb(70, 70, 70),rgb(77, 77, 77),black); */
+        width: 105%;
+        padding: 25px;
+        background-size: 300%;
     }
-    
     .categorylabel {
-        display: flex;
-        width: 70%;
-        padding: 30px;
+        padding: 15px;
     }
-     .categorylabel h2 {
-        color: var(--brighttext);
-        font-size: 28px ;
-     }
+    .categorylabel h2 {
+         font-size: 19px ;
+    }
     
-     .mystorycontent {
-        display: inline-block;
-        color: var(--contrast);
-        left: 15px;
-        position: relative;
-        left: 50px;
+    .mystorycontent {
+        left: 25px;
         flex-wrap: wrap;
         height: 200px;
         width: 85%;
-        font-size: 20px;
-     }
-
-     /*Projects Styling*/
-     .projectspace {
-        width:80%;
+        font-size: 15px;
+    }
+    .projectspace {
+        width:100%;
         display:flex;
         height: 600px;
-        /* justify-content: center; */
-
-     }
-
-     .projectgrid { /*first attempt at making a grid*/
+    }
+    .projectgrid { 
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-gap: 2% 3%
-        }
-        
-        .project1 { 
-            grid-area: 1 / 1 / 2 / 4; 
-
-        }
-        .project2 { 
-            grid-area: 2 / 1 / 3 / 2; 
-        }
-        .project3 { 
-            grid-area: 2 / 2 / 3 / 3; 
-        }
-        .project4 { 
-            grid-area: 2 / 3 / 3 / 4;
-         }
-        .project5 {
-             grid-area: 3 / 1 / 4 / 2; 
-            }
-        .project6 { 
-            grid-area: 3 / 2 / 4 / 3; 
-        }
-        .project7 { 
-            grid-area: 3 / 3 / 4 / 4; 
-        }
+        grid-gap: 0% 0%;
+        width: 70%;   
+    }
+    .projectname {
+        font-size: 14px;
+    }
+    .projecttext {
+        font-size: 12px;
+    }
+    footer ul li a{
+        font-size: 12px;
+    }
+}
