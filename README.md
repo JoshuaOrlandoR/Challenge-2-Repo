@@ -9,7 +9,7 @@ Instead, I chose to host these images on Google Photos, and url link to them. Th
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Installation
-To utilize the site, refer to the live link here: [Hosted Site](https://joshuaorlandor.github.io/Challenge-2-Repo/)
+To utilize the site, refer to the live link here: [Hosted Site](https://joshuaorlandor.github.io/Challenge-2-Repo-JoshuaOrlando-Portfolio/)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
