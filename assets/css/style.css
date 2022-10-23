@@ -290,7 +290,7 @@ footer ul li a:hover {
     .joshhero {
         height: 40vh;
         width: 110%;
-        background-position: 110% 110%; 
+        background-position: 110% 130%; 
         background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)), 
         url(https://lh3.googleusercontent.com/YDd1ALBvZVAj7LFLDkVu-yDBt9XMZlSP44jhB-2SRYWyyyss5gwIsdiZcoM7OJMHKvAhWPCKNBihhdA85OJ7EuDu7LlYzjp6bkKgY0CptuzUv-HkJz6Gb6zNZgqipCaojaqNe_KQ38iJdnftSRg9Eak7s1q2lNOUy8iMFtwZrq0UgOLCFRLVGbIg36MJzLE_P4soeYWhPpvLBwr8yu_x6ZxFBj0bLe3Q-ctBAyBqz-i1AhEhKNCRsln-_g2-L5XeCWfxs-yuNqrXWyCGxbwXgqi8xWh_qn5bM5k2XkjoMqxSWbt8EmxTgUSbyjlILCeP2JiwHh_SRoRYxf3sjNFn4s16GqfjN0m2ODw-bJJLmB3U_iQTp-kfjoQ5bHEoJ7wZkiSXHuo372nTEs-dykVoJB9nRY9kot3jyw0Da1KPaVyACU0kUQ4IRhcKWeH7VraZv_08gM1UiR-rQnLX6MDW_O6MxSNCHHKKEJfSWnduqGMGHmSGxmvMSHYlq86cLwZ7jJHoanMF_312NWRrYarXOr0GNQBkmzN96ZszTUOXUBvuYSHYtIhj1OyAX5Gx_0_55hvd4S8Hey1CuxpZXiZa7HcCqC0Rqd8Z0aodBxLiRaOepklTGoZ00z3gSUKEf7nZza1Y1Str1kWKo1z2h-Z55lItBADVDq3JYIDH3bWht9z82yicCcBVosrHidBh1vbHv27iVt0s3o1rnE_QSO9rMjtDRaHzZCSmOmW50pVpoN5dQ5kIamAy4i9xAU6XmHtvih1I_EEaD6zV-iYpVASjZk_5ECY_Fqw4NCX5vLvSAEmkZ8Inb_oddHuIu_xCux4yo-mRbO3zOiyuIOfQ3uuwxy2_kTVRL_CgtbGEWNkuLuHir3fEsjIk45Ez2GQt2uvAcOtZEF5rNUBDhRV9eDWnxpQ7XW5jr7Cgg5oSZb58VZe1ReOC=w407-h251-no?authuser=0);
     }
@@ -308,7 +308,7 @@ footer ul li a:hover {
         font-size: 10px;
     }
     .sitebody {
-        width: 105%;
+        width: 110%;
         padding: 25px;
         background-size: 300%;
     }
@@ -338,10 +338,10 @@ footer ul li a:hover {
         width: 70%;   
     }
     .projectname {
-        font-size: 14px;
+        font-size: 12px;
     }
     .projecttext {
-        font-size: 12px;
+        font-size: 11px;
     }
     footer ul li a{
         font-size: 12px;
