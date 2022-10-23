@@ -9,7 +9,7 @@ Instead, I chose to host these images on Google Photos, and url link to them. Th
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Installation
-To utilize the site, refer to the live link here: [Hosted Site](placeholder url)
+To utilize the site, refer to the live link here: [Hosted Site](https://joshuaorlandor.github.io/Challenge-2-Repo/)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -18,6 +18,15 @@ The following are examples of what the deployed site looks like on various scree
 
 Desktop
 
+
+![1920x1080-preview-of-site](https://user-images.githubusercontent.com/114437149/197405602-004d4a2a-3831-4c3c-8b6e-de54f66ac05d.png)
+
 Tablet
 
+
+![iPadAir-preview-of-site](https://user-images.githubusercontent.com/114437149/197405722-51435710-2b5f-4762-9803-235b9750621a.png)
+
 Mobile 
+
+
+![iPhone12pro-preview-of-site](https://user-images.githubusercontent.com/114437149/197405738-da6fc6f9-4eec-4841-84af-40364acb2dd7.png)
