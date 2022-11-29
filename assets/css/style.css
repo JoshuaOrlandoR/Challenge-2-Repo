@@ -141,7 +141,10 @@ width: 100%;
 
 .project1 {  /*all the backgrounds are just placeholder until I have projects to add */
     grid-area: 1 / 1 / 2 / 4; 
-    background-image: linear-gradient(yellow, orange, red, pink);
+    background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEWdKSEk5-ikuDCJ0D7mB1MLbgUeo8Dbc1_CAXLcV-Iv-Zs-_OTsfjBIYzzBU6mGNbqFYJWAuCA-I338FBQ0b6X3T7DysKnNC99pWwp2ZQ0jDxaaINTQLRNsYk3oMa7fwZ3P-yIWEuRsoX9bqMXIXWILf3p7wQvoMphpkgnBmgdyv3WmyYr9oEKGzO7pUjwKX0XcF9v7i1kzclQ-Q56DPl98gXFySy8PM7f2ox-CzmDZ6C6MlI30AItEgcRnaE5a5w3fj1wF5Oa9RITRqNBnRQ-T9Wy8HrdCtjVrQNl-2sLNHEFW8iw0P2vqpF1h_KNYMUX4spvAf4PoSePRfwMIsQxeEnrv-HjAWqRKwrSZm9HYzJTg-ZPmvACtRWuBMK66Z4nhhFFX2Mkt8GqPsR3COhRn1d7i4XI8ClKo2P-rXlZwjEOt8DEizeqYoiBYp2QS7nZMlCiVoc3kLyvcioVOcvfea-yJTzF7ZBBfwuQ6fTPDzqneSUMsFyyBemtKZ8-zSSuCJkCKLZ146mSgGHVko6PvBBxHVBvovXccI3DhIEClSsDlYK4Qsr6LNVZDi988oEMu844uZPWWL6DZe-8IrS_ITSQ_zeq-82SN1HT6A_bhMMKaJPe1VEnSZ7oESvViELAbCqP-KrEntCUVViVkEvo1e47qI-9-h3W1ZJzxEopf3HotfjTgrNIGNphNlwx3M7dOxFTd2O6t94YJCLwVUSMv7sWiFLKMAwcstNFDP9mn-LhgxtLymWlIuCK_MwnZi7vYZmjMM3-rK5RzNDd_samcY84RB210aonjvSwOL2N8paRtmmv-DlUvnaNAMjpqqLhjCUKshmzWpFScVG_S3T6lBbsiat1b2SHMiWxoLxUv1RcIw3M-B1oE0FjoFTV73KeyNx5MCPi_L98fAt9EN-NUMw=w1560-h433-no?authuser=0);
+    background-repeat:inherit;
+    background-size: 90%;
+    background-position-y:20%, 40%;
     text-decoration: none;
 }
 
